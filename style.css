@@ -201,9 +201,8 @@ h1, h2, h3 { line-height: 1.1; font-family: var(--font); }
 .two-col .col-sub  { color: var(--forest); font-weight: 300; }
 .pull-quote {
   background: var(--krem); border-radius: 12px;
-  padding: 28px; display: flex; gap: 18px; align-items: flex-start;
+  padding: 28px;
 }
-.pull-quote-bar { display: none; }
 .pull-quote p { font-size: 17px; color: var(--ink); line-height: 1.5; font-weight: 400; }
 
 @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; gap: 20px; } }
