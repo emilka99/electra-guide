@@ -39,7 +39,7 @@ h1, h2, h3 { line-height: 1.1; font-family: var(--font); }
 ══════════════════════════════════════ */
 #hero {
   position: relative;
-  height: 100vh; min-height: 600px;
+  height: calc(100vh - 64px); min-height: 500px;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   overflow: hidden;
@@ -69,9 +69,8 @@ h1, h2, h3 { line-height: 1.1; font-family: var(--font); }
 }
 .hero-subtitle {
   font-size: 15px; font-weight: 400;
-  color: rgba(250,247,242,0.92);
+  color: var(--ink);
   letter-spacing: 0.04em;
-  text-shadow: 0 1px 6px rgba(44,36,22,0.5);
 }
 .hero-lang-btns {
   display: flex; gap: 14px; margin-top: 8px;
@@ -85,6 +84,7 @@ h1, h2, h3 { line-height: 1.1; font-family: var(--font); }
   border: 2px solid transparent;
   min-width: 110px;
 }
+.pill-btn { box-shadow: 0 4px 20px rgba(44,36,22,0.45); }
 .pill-btn:hover { opacity: 0.88; }
 .pill-btn--dark {
   background: var(--forest); color: #fff;
@@ -168,7 +168,7 @@ h1, h2, h3 { line-height: 1.1; font-family: var(--font); }
   display: flex; flex-direction: column; gap: 20px;
 }
 .intro-eyebrow { font-size: 10px; font-weight: 500; color: var(--clay); letter-spacing: 0.14em; text-transform: uppercase; }
-.intro-divider { width: 40px; height: 2px; background: var(--gold); }
+.intro-divider { display: none; }
 .intro-title   { font-size: 40px; font-weight: 700; color: #fff; line-height: 1.08; }
 .intro-body    { font-size: 15px; color: rgba(232,217,196,0.8); line-height: 1.7; font-weight: 300; }
 .intro-address { font-size: 12px; color: var(--clay); letter-spacing: 0.05em; margin-top: 4px; }
@@ -184,7 +184,7 @@ h1, h2, h3 { line-height: 1.1; font-family: var(--font); }
 .section { padding: 80px 0; }
 .section-label { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; margin-bottom: 12px; text-transform: uppercase; }
 .section-title { font-size: 38px; font-weight: 700; line-height: 1.1; margin-bottom: 24px; }
-.section-divider { height: 1px; background: var(--sand); margin-bottom: 36px; }
+.section-divider { display: none; }
 
 @media (max-width: 900px) { .section { padding: 56px 0; } }
 @media (max-width: 768px) { .section-title { font-size: 26px; } }
@@ -203,7 +203,7 @@ h1, h2, h3 { line-height: 1.1; font-family: var(--font); }
   background: var(--krem); border-radius: 12px;
   padding: 28px; display: flex; gap: 18px; align-items: flex-start;
 }
-.pull-quote-bar { width: 3px; min-height: 48px; background: var(--terakota); border-radius: 2px; flex-shrink: 0; }
+.pull-quote-bar { display: none; }
 .pull-quote p { font-size: 17px; color: var(--ink); line-height: 1.5; font-weight: 400; }
 
 @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; gap: 20px; } }
@@ -263,13 +263,10 @@ h1, h2, h3 { line-height: 1.1; font-family: var(--font); }
 /* ── Subsection titles ── */
 .subsection-title {
   font-size: 22px; font-weight: 600; color: var(--ink);
-  margin-top: 56px; margin-bottom: 8px;
+  margin-top: 56px; margin-bottom: 16px;
   display: block;
 }
-.subsection-divider {
-  height: 2px; width: 40px; background: var(--gold);
-  margin-bottom: 20px;
-}
+.subsection-divider { display: none; }
 
 /* ══════════════════════════════════════
    TRANSPORT & ZASADY LIST
