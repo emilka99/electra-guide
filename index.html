@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electra Apartments – Krakowski Przewodnik / City Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-pl">
+
+<!-- ══ LANGUAGE SELECTOR ══ -->
+<div id="lang-selector">
+  <div class="lang-inner">
+    <div class="lang-logo">
+      <h1>Electra</h1>
+      <p>A P A R T M E N T S</p>
+    </div>
+    <div class="lang-divider"></div>
+    <p class="lang-tagline lang-pl">Twój krakowski przewodnik od Square</p>
+    <p class="lang-tagline lang-en">Your Kraków guide by Square</p>
+    <div class="lang-btns">
+      <button class="lang-btn active" onclick="setLang('pl')">PL</button>
+      <button class="lang-btn inactive" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ STICKY NAV ══ -->
+<nav id="main-nav">
+  <div class="nav-logo">
+    <h2>Electra</h2>
+    <p>A P A R T M E N T S</p>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#krakow" class="lang-pl active">Kraków</a><a href="#krakow" class="lang-en active">Kraków</a></li>
+    <li><a href="#transport" class="lang-pl">Transport</a><a href="#transport" class="lang-en">Transport</a></li>
+    <li><a href="#zasady" class="lang-pl">Zasady</a><a href="#zasady" class="lang-en">Rules</a></li>
+    <li><a href="#bezp" class="lang-pl">Bezpieczeństwo</a><a href="#bezp" class="lang-en">Safety</a></li>
+    <li><a href="#miejsca" class="lang-pl">Miejsca</a><a href="#miejsca" class="lang-en">Places</a></li>
+  </ul>
+  <div class="nav-lang">
+    <button class="nav-lang-btn active" onclick="setLang('pl')">PL</button>
+    <button class="nav-lang-btn inactive" onclick="setLang('en')">EN</button>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-photo">
+    <span class="hero-photo-label">PHOTO: Kraków panorama</span>
+  </div>
+  <div class="hero-content">
+    <p class="hero-label">ELECTRA APARTMENTS</p>
+    <div class="hero-divider"></div>
+    <h1 class="hero-title lang-pl">Żyj lokalnie,<br>mieszkaj wyjątkowo.</h1>
+    <h1 class="hero-title lang-en">Live like a local,<br>stay exceptionally.</h1>
+    <p class="hero-body lang-pl">Oddajemy w Twoje ręce ten przewodnik, byś mógł poczuć Kraków dokładnie tak, jak my go czujemy — bez pośpiechu i turystycznej rutyny.</p>
+    <p class="hero-body lang-en">We hand you this guide so you can experience Kraków exactly as we do — without the rush and tourist routine.</p>
+    <p class="hero-address">ul. Cieszyńska 9, Kraków</p>
+  </div>
+</section>
+
+<!-- ══ KRAKÓW ══ -->
+<section id="krakow" class="section">
+  <div class="container">
+    <p class="section-label lang-pl">O KRAKOWIE</p>
+    <p class="section-label lang-en">ABOUT KRAKÓW</p>
+    <h2 class="section-title lang-pl">Kraków w pigułce</h2>
+    <h2 class="section-title lang-en">Kraków in a Nutshell</h2>
+    <div class="section-divider"></div>
+    <div class="two-col">
+      <p class="col-main lang-pl">Kraków to jedno z najstarszych i najpiękniejszych miast w Polsce, w którym wielowiekowa historia przeplata się z nowoczesnym rytmem metropolii. Wybierając Electrę przy Cieszyńskiej 9, zamieszkasz na styku dwóch fascynujących światów.</p>
+      <p class="col-main lang-en">Kraków is one of Poland's oldest and most beautiful cities, where centuries of history intertwine with the rhythm of a modern metropolis. By choosing Electra at Cieszyńska 9, you are staying right at the crossroads of two fascinating worlds.</p>
+      <p class="col-sub lang-pl">Z jednej strony masz majestatyczne i pełne energii Stare Miasto, z drugiej — kameralną Krowodrzę, która urzeka spokojem i kojącą bliskością natury. Te dwa odmienne oblicza Krakowa idealnie się tu przenikają.</p>
+      <p class="col-sub lang-en">On one side lies the majestic energy of the Old Town; on the other, intimate Krowodrza with its soothing closeness to nature. These two distinct faces of Kraków blend here with exceptional harmony.</p>
+    </div>
+    <div class="pull-quote">
+      <div class="pull-quote-bar"></div>
+      <p class="lang-pl">Dwa odmienne oblicza Krakowa — Stare Miasto i kameralna Krowodrza — idealnie się tu przenikają.</p>
+      <p class="lang-en">Two distinct faces of Kraków — the Old Town and intimate Krowodrza — blend here with exceptional harmony.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRANSPORT ══ -->
+<section id="transport" class="section">
+  <div class="container">
+    <p class="section-label lang-pl">TRANSPORT</p>
+    <p class="section-label lang-en">TRANSPORT</p>
+    <h2 class="section-title lang-pl">Jak poruszać się po mieście?</h2>
+    <h2 class="section-title lang-en">Getting around the city</h2>
+    <div class="section-divider"></div>
+    <div class="cards-grid">
+      <div class="info-card">
+        <h3 class="lang-pl">🚶 Na piechotę</h3>
+        <h3 class="lang-en">🚶 On foot</h3>
+        <p class="lang-pl">Najważniejsze punkty Starego Miasta i Krowodrzy masz na wyciągnięcie ręki — odkrywaj okolicę na piechotę.</p>
+        <p class="lang-en">Key highlights of the Old Town and Krowodrza are right at your doorstep — explore on foot.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="lang-pl">🚋 Komunikacja miejska</h3>
+        <h3 class="lang-en">🚋 Public transport</h3>
+        <p class="lang-pl">Tramwaje i autobusy docierają w każdy zakątek miasta. Bilety kupisz w automatach, w pojazdach lub przez app Jakdojade.</p>
+        <p class="lang-en">Trams and buses reach every corner. Buy tickets at machines, on board or via the Jakdojade app.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="lang-pl">📱 Jakdojade + Uber/Bolt</h3>
+        <h3 class="lang-en">📱 Jakdojade + Uber/Bolt</h3>
+        <p class="lang-pl">Jakdojade — trasy i bilety. Uber, Bolt, Free Now — transport door-to-door. Hulajnogi elektryczne — krótkie dystanse.</p>
+        <p class="lang-en">Jakdojade for routes and tickets. Uber, Bolt, Free Now for door-to-door. E-scooters for short trips.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="lang-pl">🏙️ Strefa Czystego Transportu</h3>
+        <h3 class="lang-en">🏙️ Low Emission Zone</h3>
+        <p class="lang-pl">SCT obejmuje niemal całe miasto. Wolny wjazd: EV, benzyna Euro 4+ (po 2005), diesel Euro 6+ (po 2014).</p>
+        <p class="lang-en">LEZ covers almost the whole city. Free entry: EVs, petrol Euro 4+ (after 2005), diesel Euro 6+ (after 2014).</p>
+      </div>
+      <div class="info-card">
+        <h3 class="lang-pl">🅿️ Płatne parkowanie</h3>
+        <h3 class="lang-en">🅿️ Paid parking</h3>
+        <p class="lang-pl">Centrum i Krowodrza to strefa płatna. Opłacaj postój w parkomatach lub aplikacjach mobilnych.</p>
+        <p class="lang-en">City centre and Krowodrza are paid zones. Pay at meters or via mobile apps.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="lang-pl">⚠️ Ważne!</h3>
+        <h3 class="lang-en">⚠️ Important!</h3>
+        <p class="lang-pl">Przechodzenie przez pasy na czerwonym świetle jest w Polsce zabronione i grozi mandatem.</p>
+        <p class="lang-en">Crossing on a red light is illegal in Poland and may result in a fine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ZASADY / RULES ══ -->
+<section id="zasady" class="section">
+  <div class="container">
+    <p class="section-label lang-pl">ZASADY</p>
+    <p class="section-label lang-en">RULES</p>
+    <h2 class="section-title lang-pl">Czego nie robić w Krakowie?</h2>
+    <h2 class="section-title lang-en">What NOT to do in Kraków</h2>
+    <div class="section-divider"></div>
+    <div class="rules-grid">
+      <div class="rule-item"><div class="rule-icon">🍺</div><p class="lang-pl">Nie pij alkoholu w miejscach publicznych — to nielegalne i grozi mandatem.</p><p class="lang-en">Don't drink alcohol in public — it's illegal in Poland and may result in a fine.</p></div>
+      <div class="rule-item"><div class="rule-icon">🚕</div><p class="lang-pl">Nie korzystaj z nieoznakowanych taksówek. Wybieraj wyłącznie sprawdzone aplikacje.</p><p class="lang-en">Only use marked taxis and trusted apps — never get into an unmarked cab.</p></div>
+      <div class="rule-item"><div class="rule-icon">🔇</div><p class="lang-pl">Cisza nocna obowiązuje po 22:00. Historyczne kamienice mają doskonałą akustykę.</p><p class="lang-en">Quiet hours after 10 PM. Historic tenements have excellent acoustics.</p></div>
+      <div class="rule-item"><div class="rule-icon">🐴</div><p class="lang-pl">Nie wsiadaj do dorożki bez ustalenia ceny — uchroni Cię przed niespodziankami.</p><p class="lang-en">Always agree on the price before getting into a horse carriage.</p></div>
+      <div class="rule-item"><div class="rule-icon">🐦</div><p class="lang-pl">Nie dokarmiaj gołębi na Rynku — jest zabronione i szkodzi zabytkowej architekturze.</p><p class="lang-en">Don't feed pigeons in the Main Square — it's prohibited and harms the architecture.</p></div>
+      <div class="rule-item"><div class="rule-icon">⚠️</div><p class="lang-pl">Uważaj na naganiaczy — propozycje „najlepszego klubu" często kończą się problemami.</p><p class="lang-en">Watch out for touts — offers of the "best club" often end badly.</p></div>
+    </div>
+    <div class="info-box">
+      <h3 class="lang-pl">💳 Napiwki i płatności</h3>
+      <h3 class="lang-en">💳 Tips & Payments</h3>
+      <p class="lang-pl">Kartą zapłacisz niemal wszędzie. Napiwek (5–10%) nieobowiązkowy — sprawdź rachunek, serwis bywa doliczany automatycznie. Waluta: PLN. Gniazdka typ C/E. Woda z kranu zdatna do picia.</p>
+      <p class="lang-en">Card payments accepted almost everywhere. Tipping (5–10%) not mandatory — check the bill as service charge may be added. Currency: PLN. Sockets type C/E. Tap water is safe to drink.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BEZPIECZEŃSTWO / SAFETY ══ -->
+<section id="bezp" class="section">
+  <div class="container">
+    <p class="section-label lang-pl">BEZPIECZEŃSTWO</p>
+    <p class="section-label lang-en">SAFETY</p>
+    <h2 class="section-title lang-pl">Twoje bezpieczeństwo</h2>
+    <h2 class="section-title lang-en">Your safety</h2>
+    <div class="section-divider"></div>
+    <div class="safety-grid">
+      <div class="safety-items">
+        <div class="safety-item">
+          <div class="safety-icon">👛</div>
+          <p class="lang-pl">Uważaj na kieszonkowców w tłumie — Rynek Główny, tramwaje. Trzymaj telefon i dokumenty bezpiecznie.</p>
+          <p class="lang-en">Watch out for pickpockets in crowds — Main Square, trams. Keep your phone and documents safe.</p>
+        </div>
+        <div class="safety-item">
+          <div class="safety-icon">🆘</div>
+          <p class="lang-pl">Numer alarmowy 112 — bezpłatny, europejski, czynny 24/7. Dyspozytor mówi po angielsku.</p>
+          <p class="lang-en">Emergency number 112 — free, European, available 24/7. Dispatchers speak English.</p>
+        </div>
+      </div>
+      <div class="pharmacy-card">
+        <h3 class="lang-pl">💊 Apteki czynne całą dobę</h3>
+        <h3 class="lang-en">💊 24/7 Pharmacies</h3>
+        <div class="pharmacy-item">
+          <p class="ph-name">Dr. Max</p>
+          <p class="ph-addr">ul. Karmelicka 23</p>
+          <p class="ph-time">🚋 17 min &nbsp; 🚶 19 min</p>
+        </div>
+        <div class="pharmacy-item">
+          <p class="ph-name">DOZ</p>
+          <p class="ph-addr">ul. Kronikarza Galla 26</p>
+          <p class="ph-time">🚋 18 min &nbsp; 🚶 25 min</p>
+        </div>
+        <div class="pharmacy-item">
+          <p class="ph-name">Gemini</p>
+          <p class="ph-addr">ul. Krowoderskich Zuchów 14</p>
+          <p class="ph-time">🚋 18 min &nbsp; 🚶 29 min</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MIEJSCA / PLACES ══ -->
+<section id="miejsca" class="section">
+  <div class="container">
+    <p class="section-label lang-pl">Z PIERWSZYCH STRON PRZEWODNIKÓW</p>
+    <p class="section-label lang-en">STRAIGHT FROM THE GUIDEBOOKS</p>
+    <h2 class="section-title lang-pl">Miejsca z duszą</h2>
+    <h2 class="section-title lang-en">Places with a soul</h2>
+    <p class="section-intro lang-pl">Nasz kuratorski wybór punktów, które definiują współczesny charakter miasta — od tętniącej energią klasyki Starego Miasta po kameralne przystanie spokoju na Krowodrzy.</p>
+    <p class="section-intro lang-en">Our curated selection of places that define the contemporary character of Kraków — from the energy of Old Town classics to quiet retreats in Krowodrza.</p>
+
+    <!-- MUST-SEE -->
+    <div class="cat-header">
+      <div class="cat-bar" style="background:#c9a84c"></div>
+      <span class="cat-label lang-pl">MUST-SEE</span>
+      <span class="cat-label lang-en">MUST-SEE</span>
+    </div>
+    <div class="places-grid">
+      <div class="place-card">
+        <div class="place-photo"><span class="place-badge lang-pl">MUST-SEE</span><span class="place-badge lang-en">MUST-SEE</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Sukiennice</h3>
+          <h3 class="place-name lang-en">The Cloth Hall</h3>
+          <div class="place-pills"><span class="place-pill">🚋 17 min</span><span class="place-pill">🚶 24 min</span></div>
+          <p class="place-desc lang-pl">Architektoniczna perła Rynku Głównego. Na piętrze Galeria Sztuki Polskiej, pod ziemią interaktywne Muzeum Rynek Podziemny.</p>
+          <p class="place-desc lang-en">The jewel of the Main Square. Polish Art Gallery upstairs, interactive Underground Museum below.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="place-photo"><span class="place-badge lang-pl">MUST-SEE</span><span class="place-badge lang-en">MUST-SEE</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Kościół Mariacki</h3>
+          <h3 class="place-name lang-en">St. Mary's Basilica</h3>
+          <div class="place-pills"><span class="place-pill">🚋 20 min</span><span class="place-pill">🚶 25 min</span></div>
+          <p class="place-desc lang-pl">Dom słynnego hejnału. Mistrzowski ołtarz Wita Stwosza i błękitno-złote polichromie Jana Matejki.</p>
+          <p class="place-desc lang-en">Home of the famous trumpet call. Veit Stoss's masterpiece altarpiece and Matejko's polychromies.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="place-photo"><span class="place-badge lang-pl">MUST-SEE</span><span class="place-badge lang-en">MUST-SEE</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Zamek Wawelski</h3>
+          <h3 class="place-name lang-en">Wawel Royal Castle</h3>
+          <div class="place-pills"><span class="place-pill">🚋 21 min</span><span class="place-pill">🚶 36 min</span></div>
+          <p class="place-desc lang-pl">Wzgórze Wawelskie — esencja królewskiego splendoru. Renesansowy dziedziniec i widok na zakole Wisły.</p>
+          <p class="place-desc lang-en">Royal splendour and the heart of Polish history. A Renaissance arcaded courtyard by the Vistula.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="place-photo"><span class="place-badge lang-pl">MUST-SEE</span><span class="place-badge lang-en">MUST-SEE</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Muzeum Czartoryskich</h3>
+          <h3 class="place-name lang-en">Czartoryski Museum</h3>
+          <div class="place-pills"><span class="place-pill">🚋 13 min</span><span class="place-pill">🚶 20 min</span></div>
+          <p class="place-desc lang-pl">Dama z gronostajem Leonarda da Vinci i Pejzaż z miłosiernym Samarytaninem Rembrandta.</p>
+          <p class="place-desc lang-en">Face-to-face with Leonardo's Lady with an Ermine and Rembrandt's Landscape with the Good Samaritan.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="place-photo"><span class="place-badge lang-pl">MUST-SEE</span><span class="place-badge lang-en">MUST-SEE</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Muzeum Narodowe</h3>
+          <h3 class="place-name lang-en">National Museum</h3>
+          <div class="place-pills"><span class="place-pill">🚋 17 min</span><span class="place-pill">🚶 29 min</span></div>
+          <p class="place-desc lang-pl">Monumentalny Gmach Główny — serce polskiego modernizmu. Spektakularne wystawy i galerie designu.</p>
+          <p class="place-desc lang-en">The monumental Main Building — heart of Polish modernism. Stunning galleries of art and design.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="place-photo"><span class="place-badge lang-pl">MUST-SEE</span><span class="place-badge lang-en">MUST-SEE</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Dzielnica Kazimierz</h3>
+          <h3 class="place-name lang-en">Kazimierz District</h3>
+          <div class="place-pills"><span class="place-pill">🚋 28 min</span><span class="place-pill">🚶 49 min</span></div>
+          <p class="place-desc lang-pl">Zabytkowe synagogi, niezależne galerie i kawiarnie. Klimatyczne zaułki Szerokiej i Placu Nowego.</p>
+          <p class="place-desc lang-en">Historic synagogues beside indie galleries and artisan cafés. The atmosphere of Szeroka and Nowy Square.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OFF THE BEATEN PATH -->
+    <div class="cat-header">
+      <div class="cat-bar" style="background:#c9a84c"></div>
+      <span class="cat-label lang-pl">POZA UTARTYM SZLAKIEM</span>
+      <span class="cat-label lang-en">OFF THE BEATEN PATH</span>
+    </div>
+    <div class="places-grid">
+      <div class="place-card">
+        <div class="place-photo"><span class="place-badge lang-pl">OFF-TRACK</span><span class="place-badge lang-en">OFF-TRACK</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Muzeum Manggha</h3>
+          <h3 class="place-name lang-en">Manggha Museum</h3>
+          <div class="place-pills"><span class="place-pill">🚋 21 min</span><span class="place-pill">🚶 43 min</span></div>
+          <p class="place-desc lang-pl">Japoński minimalizm nad Wisłą. Falująca architektura Isozakiego i kawiarnia z widokiem na Wawel.</p>
+          <p class="place-desc lang-en">Japanese minimalism by the Vistula. Isozaki's undulating architecture and a café with Wawel views.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="place-photo"><span class="place-badge lang-pl">OFF-TRACK</span><span class="place-badge lang-en">OFF-TRACK</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Bazylika św. Franciszka</h3>
+          <h3 class="place-name lang-en">St Francis Basilica</h3>
+          <div class="place-pills"><span class="place-pill">🚋 18 min</span><span class="place-pill">🚶 28 min</span></div>
+          <p class="place-desc lang-pl">Klasyczny gotyk skrywa jeden z najpiękniejszych manifestów polskiej secesji — witraże Wyspiańskiego.</p>
+          <p class="place-desc lang-en">Classic Gothic hides one of the finest Art Nouveau interiors in Poland — Wyspiański's stained glass.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="place-photo"><span class="place-badge lang-pl">OFF-TRACK</span><span class="place-badge lang-en">OFF-TRACK</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Ogród Botaniczny UJ</h3>
+          <h3 class="place-name lang-en">Botanical Garden UJ</h3>
+          <div class="place-pills"><span class="place-pill">🚋 23 min</span><span class="place-pill">🚶 36 min</span></div>
+          <p class="place-desc lang-pl">Najstarszy ogród botaniczny w Polsce. Wiekowe aleje, zabytkowe szklarnie i tysiące egzotycznych gatunków.</p>
+          <p class="place-desc lang-en">Poland's oldest botanical garden. Ancient avenues, historic glasshouses and thousands of exotic species.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- W OKOLICY / NEIGHBOURHOOD -->
+    <div class="cat-header">
+      <div class="cat-bar" style="background:#a0614a"></div>
+      <span class="cat-label lang-pl">W OKOLICY</span>
+      <span class="cat-label lang-en">NEIGHBOURHOOD HIGHLIGHTS</span>
+    </div>
+    <div class="places-grid">
+      <div class="place-card">
+        <div class="place-photo" style="background:rgba(156,142,126,0.2)"><span class="place-badge lang-pl">W OKOLICY</span><span class="place-badge lang-en">LOCAL</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Kościół św. Szczepana</h3>
+          <h3 class="place-name lang-en">St Stephen's Church</h3>
+          <div class="place-pills"><span class="place-pill">🚶 8 min</span></div>
+          <p class="place-desc lang-pl">Unikalna perła krakowskiego modernizmu. Wnętrze art déco omijane przez masową turystykę.</p>
+          <p class="place-desc lang-en">A unique Art Deco interior overlooked by mass tourism. Just 8 minutes on foot.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="place-photo" style="background:rgba(156,142,126,0.2)"><span class="place-badge lang-pl">W OKOLICY</span><span class="place-badge lang-en">LOCAL</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Park Krakowski</h3>
+          <h3 class="place-name lang-en">Park Krakowski</h3>
+          <div class="place-pills"><span class="place-pill">🚶 12 min</span></div>
+          <p class="place-desc lang-pl">XIX-wieczny park na wzór ogrodów wiedeńskich — rzeźby, staw i gabinet grabowy z czytelnią.</p>
+          <p class="place-desc lang-en">19th-century Viennese-style park — sculptures, a pond and a charming reading bower.</p>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="place-photo" style="background:rgba(156,142,126,0.2)"><span class="place-badge lang-pl">W OKOLICY</span><span class="place-badge lang-en">LOCAL</span></div>
+        <div class="place-content">
+          <h3 class="place-name lang-pl">Park Kleparski</h3>
+          <h3 class="place-name lang-en">Park Kleparski</h3>
+          <div class="place-pills"><span class="place-pill">🚶 8 min</span></div>
+          <p class="place-desc lang-pl">Fort Kleparz w otoczeniu zieleni — nieoczywisty kierunek dla pasjonatów historii i architektury.</p>
+          <p class="place-desc lang-en">Fort Kleparz surrounded by greenery — an unexpected gem for history enthusiasts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <h2>Electra</h2>
+      <p>A P A R T M E N T S</p>
+    </div>
+    <div class="footer-right">
+      <p>ul. Cieszyńska 9, Kraków</p>
+      <p>Electra is part of Square</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Language switch
+  function setLang(lang) {
+    document.body.className = 'lang-' + lang;
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      b.className = 'lang-btn ' + (b.textContent.toLowerCase() === lang ? 'active' : 'inactive');
+    });
+    document.querySelectorAll('.nav-lang-btn').forEach(b => {
+      b.className = 'nav-lang-btn ' + (b.textContent.toLowerCase() === lang ? 'active' : 'inactive');
+    });
+    localStorage.setItem('electra-lang', lang);
+  }
+
+  // Restore saved lang
+  const saved = localStorage.getItem('electra-lang');
+  if (saved) setLang(saved);
+
+  // Hide lang selector on click
+  document.querySelector('#lang-selector').addEventListener('click', function(e) {
+    if (e.target.classList.contains('lang-btn')) return;
+    this.style.display = 'none';
+  });
+  // Also hide after lang selection
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      setTimeout(() => { document.querySelector('#lang-selector').style.display = 'none'; }, 300);
+    });
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('open');
+  }
+
+  // Close menu on nav click
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('nav-links').classList.remove('open'));
+  });
+
+  // Active nav highlight on scroll
+  const sections = ['krakow','transport','zasady','bezp','miejsca'];
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && window.scrollY >= el.offsetTop - 100) current = id;
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+</script>
+</body>
+</html>
