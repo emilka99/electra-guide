@@ -6,36 +6,35 @@
   <title>Electra Apartments – Krakowski Przewodnik / City Guide</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+  <!-- Satoshi font loaded via style.css @import -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="lang-pl">
 
-<!-- ══ LANGUAGE SELECTOR ══ -->
-<div id="lang-selector">
-  <div class="lang-inner">
-    <div class="lang-logo">
-      <h1>Electra</h1>
-      <p>A P A R T M E N T S</p>
-    </div>
-    <div class="lang-divider"></div>
-    <p class="lang-tagline lang-pl">Twój krakowski przewodnik od Square</p>
-    <p class="lang-tagline lang-en">Your Kraków guide by Square</p>
-    <div class="lang-btns">
-      <button class="lang-btn active" onclick="setLang('pl')">PL</button>
-      <button class="lang-btn inactive" onclick="setLang('en')">EN</button>
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-bg">
+    <img src="images/hero.jpg" alt="Kraków panorama">
+  </div>
+  <div class="hero-center">
+    <img src="images/electra-logo.png" alt="Electra" class="hero-logo-img">
+    <p class="hero-subtitle lang-pl">Twój krakowski przewodnik od Square</p>
+    <p class="hero-subtitle lang-en">Your Kraków guide by Square</p>
+    <div class="hero-lang-btns">
+      <button class="pill-btn pill-btn--dark" id="btn-pl" onclick="setLang('pl')">PL</button>
+      <button class="pill-btn pill-btn--outline" id="btn-en" onclick="setLang('en')">ENG</button>
     </div>
   </div>
-</div>
+  <div class="hero-bar"></div>
+</section>
 
 <!-- ══ STICKY NAV ══ -->
 <nav id="main-nav">
-  <div class="nav-logo">
-    <h2>Electra</h2>
-    <p>A P A R T M E N T S</p>
-  </div>
+  <a href="#hero" class="nav-logo">
+    <img src="images/electra-logo.png" alt="Electra" class="nav-logo-img">
+  </a>
   <ul class="nav-links" id="nav-links">
-    <li><a href="#krakow" class="lang-pl active">Kraków</a><a href="#krakow" class="lang-en active">Kraków</a></li>
+    <li><a href="#krakow" class="lang-pl">Kraków</a><a href="#krakow" class="lang-en">Kraków</a></li>
     <li><a href="#transport" class="lang-pl">Transport</a><a href="#transport" class="lang-en">Transport</a></li>
     <li><a href="#zasady" class="lang-pl">Zasady</a><a href="#zasady" class="lang-en">Rules</a></li>
     <li><a href="#bezp" class="lang-pl">Bezpieczeństwo</a><a href="#bezp" class="lang-en">Safety</a></li>
@@ -50,19 +49,15 @@
   </button>
 </nav>
 
-<!-- ══ HERO ══ -->
-<section id="hero">
-  <div class="hero-photo">
-    <img src="images/hero.jpg" alt="Kraków panorama">
-  </div>
-  <div class="hero-content">
-    <p class="hero-label">ELECTRA APARTMENTS</p>
-    <div class="hero-divider"></div>
-    <h1 class="hero-title lang-pl">Żyj lokalnie,<br>mieszkaj wyjątkowo.</h1>
-    <h1 class="hero-title lang-en">Live like a local,<br>stay exceptionally.</h1>
-    <p class="hero-body lang-pl">Oddajemy w Twoje ręce ten przewodnik, byś mógł poczuć Kraków dokładnie tak, jak my go czujemy – bez pośpiechu i turystycznej rutyny. Znajdziesz tutaj sprawdzone patenty na to, jak się poruszać i o czym pamiętać, aby Twój pobyt był maksymalnie komfortowy.</p>
-    <p class="hero-body lang-en">We're delighted to share this guide with you so you can experience Kraków just as we do – without the rush or the usual tourist routines. Inside you'll find insider tips on how to navigate the city and essential reminders to ensure your stay is as seamless and comfortable as possible.</p>
-    <p class="hero-address">ul. Cieszyńska 9, Kraków</p>
+<!-- ══ INTRO STRIP ══ -->
+<section id="intro">
+  <div class="intro-inner">
+    <span class="intro-eyebrow">ELECTRA APARTMENTS · ul. Cieszyńska 9</span>
+    <div class="intro-divider"></div>
+    <h1 class="intro-title lang-pl">Żyj lokalnie,<br>mieszkaj wyjątkowo.</h1>
+    <h1 class="intro-title lang-en">Live like a local,<br>stay exceptionally.</h1>
+    <p class="intro-body lang-pl">Oddajemy w Twoje ręce ten przewodnik, byś mógł poczuć Kraków dokładnie tak, jak my go czujemy – bez pośpiechu i turystycznej rutyny. Znajdziesz tutaj sprawdzone patenty na to, jak się poruszać i o czym pamiętać, aby Twój pobyt był maksymalnie komfortowy.</p>
+    <p class="intro-body lang-en">We're delighted to share this guide with you so you can experience Kraków just as we do – without the rush or the usual tourist routines. Inside you'll find insider tips on how to navigate the city and essential reminders to ensure your stay is as seamless and comfortable as possible.</p>
   </div>
 </section>
 
@@ -525,8 +520,7 @@
 <footer id="footer">
   <div class="footer-inner">
     <div class="footer-logo">
-      <h2>Electra</h2>
-      <p>A P A R T M E N T S</p>
+      <img src="images/electra-logo.png" alt="Electra" class="footer-logo-img">
     </div>
     <div class="footer-right">
       <p>ul. Cieszyńska 9, Kraków</p>
@@ -538,27 +532,27 @@
 <script>
   function setLang(lang) {
     document.body.className = 'lang-' + lang;
-    document.querySelectorAll('.lang-btn').forEach(b => {
-      b.className = 'lang-btn ' + (b.textContent.toLowerCase() === lang ? 'active' : 'inactive');
-    });
+    // nav lang buttons
     document.querySelectorAll('.nav-lang-btn').forEach(b => {
       b.className = 'nav-lang-btn ' + (b.textContent.toLowerCase() === lang ? 'active' : 'inactive');
     });
+    // hero pill buttons
+    const btnPl = document.getElementById('btn-pl');
+    const btnEn = document.getElementById('btn-en');
+    if (btnPl && btnEn) {
+      if (lang === 'pl') {
+        btnPl.className = 'pill-btn pill-btn--dark';
+        btnEn.className = 'pill-btn pill-btn--outline';
+      } else {
+        btnPl.className = 'pill-btn pill-btn--outline';
+        btnEn.className = 'pill-btn pill-btn--dark';
+      }
+    }
     localStorage.setItem('electra-lang', lang);
   }
 
   const saved = localStorage.getItem('electra-lang');
   if (saved) setLang(saved);
-
-  document.querySelector('#lang-selector').addEventListener('click', function(e) {
-    if (e.target.classList.contains('lang-btn')) return;
-    this.style.display = 'none';
-  });
-  document.querySelectorAll('.lang-btn').forEach(b => {
-    b.addEventListener('click', () => {
-      setTimeout(() => { document.querySelector('#lang-selector').style.display = 'none'; }, 300);
-    });
-  });
 
   function toggleMenu() {
     document.getElementById('nav-links').classList.toggle('open');
